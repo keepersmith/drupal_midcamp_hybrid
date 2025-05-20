@@ -1,3 +1,17 @@
+MidCamp 2025 Simple instructions
+* Make sure you already have ddev installed, and a docker container running
+* Run:
+ddev start
+ddev composer install
+ddev launch
+
+* Go to /admin/modules, find "Find a Doctor", check the box, scroll down and click "Install"
+* Go to /admin/config/development/performance, and turn off "Aggregate CSS files" and "Aggregate JavaScript files"
+
+
+
+-----------------
+
 # Drupal CMS
 
 Drupal CMS is a fast-moving open source product that enables site builders to easily create new Drupal sites and extend them with smart defaults, all using their browser.

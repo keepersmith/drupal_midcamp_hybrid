@@ -1,0 +1,16 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function find_a_doctor_theme($existing, $type, $theme, $path): array {
+  // JBB - this function is not used with Method B in FindADoctorBlock.php
+  // Custom theme calls for templates within this module in /templates.
+  return [
+    'find_a_doctor_display' => [
+      'variables' => [
+        'data' => [],
+      ],
+    ],
+  ];
+}

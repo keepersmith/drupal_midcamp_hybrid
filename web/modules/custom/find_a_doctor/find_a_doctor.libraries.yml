@@ -1,0 +1,7 @@
+find_a_doctor_lib:
+  version: 0.x
+  css:
+    base:
+      find_a_doctor/dist/app.css: { preprocess: 0 }
+  js:
+    find_a_doctor/dist/app.js: { weight: -1 }
