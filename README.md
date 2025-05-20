@@ -1,5 +1,5 @@
 # MidCamp 2025 Simple Instructions
-* Make sure you already have ddev and npm (v18+) installed, a docker container running, and you are in the correct project directory
+* Make sure you already have ddev and npm (node v18+) installed, a docker container running, and you are in the correct project directory
 * Run:
 ddev config --project-type=drupal11 --docroot=web
 ddev start
