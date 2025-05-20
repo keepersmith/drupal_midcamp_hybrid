@@ -1,16 +1,25 @@
 # MidCamp 2025 Simple Instructions
-* Make sure you already have ddev installed, and a docker container running.
+* Make sure you already have ddev and npm (v18+) installed, a docker container running, and you are in the correct project directory
 * Run:
+ddev config --project-type=drupal11 --docroot=web
 ddev start
 ddev composer install
 ddev launch
 
+* On "Get Started", you can "Skip this step"
+* Give your site a name, and set an admin email address and password that you will easily remember.
+* After "Setting up your site", log in with the admin email address and password that you just set.
 * Go to /admin/modules, find "Find a Doctor", check the box, scroll down and click "Install"
-* Go to /admin/structure/block, and click "Place block" in the "Content" area. Look for "Find a Doctor block", and click "Place block".
+* Go to /admin/structure/block, and click "Place block" in the "Content" area. Look for "Find a Doctor block", and click "Place block". Then un-check "Display title" and click "Save block".
 * Go to /admin/config/development/performance, and turn off "Aggregate CSS files" and "Aggregate JavaScript files"
-* View your homepage in a browser
-* Type this: cd web/modules/custom/find_a_doctor/find_a_doctor; npm run watch
+* View your homepage in a browser - the block should not appear yet
+* Run these commands:
+cd web/modules/custom/find_a_doctor/find_a_doctor
+npm install
+npm run watch
+* Reload your homepage - see the "Vite + React" block displayed
 * Make a non-breaking edit to web/modules/custom/find_a_doctor/find_a_doctor/src/App.tsx, save the file, and then reload your homepage.
+* If nothing went wrong, hopefully you can now enjoy the sweet smell of victory!
 
 -----------------
 
