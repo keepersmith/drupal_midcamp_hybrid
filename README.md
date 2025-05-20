@@ -1,14 +1,16 @@
-MidCamp 2025 Simple instructions
-* Make sure you already have ddev installed, and a docker container running
+# MidCamp 2025 Simple Instructions
+* Make sure you already have ddev installed, and a docker container running.
 * Run:
 ddev start
 ddev composer install
 ddev launch
 
 * Go to /admin/modules, find "Find a Doctor", check the box, scroll down and click "Install"
+* Go to /admin/structure/block, and click "Place block" in the "Content" area. Look for "Find a Doctor block", and click "Place block".
 * Go to /admin/config/development/performance, and turn off "Aggregate CSS files" and "Aggregate JavaScript files"
-
-
+* View your homepage in a browser
+* Type this: cd web/modules/custom/find_a_doctor/find_a_doctor; npm run watch
+* Make a non-breaking edit to web/modules/custom/find_a_doctor/find_a_doctor/src/App.tsx, save the file, and then reload your homepage.
 
 -----------------
 
